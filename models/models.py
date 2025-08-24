@@ -38,7 +38,6 @@ class SearchFilter(Base):
     user: Mapped['User'] = relationship(back_populates='search_filter')
 
 
-
 class BlackList(Base):
     __tablename__ = 'black_list'
     

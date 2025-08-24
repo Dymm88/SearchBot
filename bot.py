@@ -6,6 +6,7 @@ from config import BOT_TOKEN
 from db import init_db, async_session
 from middlewares import DbSessionMiddleware
 from routers.main import router as main_router
+from routers.tokens import router as tokens_router
 
 
 async def main():
@@ -14,6 +15,7 @@ async def main():
     
     dp.message.middleware(DbSessionMiddleware(async_session))
     dp.include_router(main_router)
+    dp.include_router(tokens_router)
     
     await init_db()
     await dp.start_polling(bot)
