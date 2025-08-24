@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Database
+*.sqlite3
+
+# Env files
+.env
+.env.*
+
+# Migrations
+migrations/
+alembic/
+
+# Test cache
+.pytest_cache/
+.cache/
